@@ -3,9 +3,13 @@
 <head>
 	<link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
 	<link rel="stylesheet", type="text/css" href="style.css">
+<<<<<<< HEAD
 	<script src="jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
 	<title>BioBites</title>
+=======
+		<title>BioBites</title>
+>>>>>>> refs/remotes/origin/master
 <style>
   ul {
     list-style-type: none;
@@ -86,6 +90,40 @@ li a:hover {
         <img class="img-responsive" src="http://wonderopolis.org/wp-content/uploads//2013/06/dreamstime_xxl_2250640.jpg">
   		</div>
   	</div>
+    <html>
+<head>
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+<body>
+
+<div id="poll">
+<h3>Which question would you like to see answered next?</h3>
+<form>
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)"> Why do some animals go to sleep during the winter?
+<br><input type="radio" name="vote" value="1" onclick="getVote(this.value)"> What is the smallest animal in the world?
+<br><input type="radio" name="vote" value="2" onclick="getVote(this.value)"> Why did dinosaurs go extinct?
+<br><input type="radio" name="vote" value="3" onclick="getVote(this.value)"> Why do plants need light?
+</form>
+</div>
+
+</body>
+</html>
   </div>
 </div>
 </body>
