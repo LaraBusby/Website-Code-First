@@ -1,6 +1,7 @@
 h1 {
 	color:rgb(0,204,102);
-	font-family: 'Loved by the King', cursive;
+    font-family: 'Chelsea Market', cursive;
+    font-size:65px;
 	text-align:center;
 }
 
@@ -33,4 +34,7 @@ img {
 div {
     resize: both;
     overflow: auto;
+}
+h3 {
+    text-align:center;
 }
