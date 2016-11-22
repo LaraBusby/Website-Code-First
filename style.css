@@ -34,3 +34,6 @@ div {
     resize: both;
     overflow: auto;
 }
+h3 {
+    text-align:center;
+}
