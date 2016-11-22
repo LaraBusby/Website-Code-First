@@ -31,11 +31,6 @@ img {
 	width: 300px;
 	border-radius: 50%
 }
-
-div {
-    resize: both;
-    overflow: auto;
-}
 h3 {
     text-align:center;
 }
