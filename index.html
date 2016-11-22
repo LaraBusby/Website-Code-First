@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
 	<title>BioBites</title>
 <style>
-  ul {
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,79 +15,131 @@
     background-color: #333;
 }
 
-li {
+ul.topnav li {
     float: left;
 }
 
-li a {
-    display: block;
+ul.topnav li a, .dropbtn {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+ul.topnav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #42c142;
 }
-</style>
-</head>
 
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px
+    top: 2px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}</style>
+</head>
 <body>
-<div class=”container”>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-<div class="container">
+  <ul class="topnav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Topics</a>
+      <div class="dropdown-content">
+        <a href="#">Animals</a>
+        <a href="#">Humans</a>
+        <a href="#">Plants</a>
+      </div>
+      </li>
+    <form>
+     <input type="text" name="search" placeholder="Search..">
+    </form>
+  </ul>
+  <div class="container">
   	<h1>B i o B i t e s</h1>
- 	<h2><em><small>Fun facts about living things</em></small></h2>
+ 	  <h2><em><small><center>Fun facts about living things</center></em></small></h2>
   	<div class="row">
- 		<div class="col-sm-4">
+ 		  <div class="col-sm-4">
   			<h3>Why do some animals go to sleep during the winter?</h3>
         <img class="img-responsive" src="http://ichef.bbci.co.uk/naturelibrary/images/ic/credit/640x395/h/hi/hibernation/hibernation_1.jpg">
   		</div>
-		<div class="col-sm-4">
+		  <div class="col-sm-4">
   			<h3>What is the biggest animal in the world?</h3>
         <img class="img-responsive" src="http://cdn.natgeotv.com.au/factsheets/thumbnails/UnderstandingTheBlueWhale_whale.jpg?v=14&azure=false&scale=both&width=1600&height=900&mode=crop">
   		</div>
- 		<div class="col-sm-4">
+ 		  <div class="col-sm-4">
   			<h3>What are bacteria, and are they bad for you?</h3>
         <img class="img-responsive" src="https://factualfacts.com/wp-content/uploads/2016/01/bacteria.jpg">
   		</div>
   	</div>
   	<div class="row">
- 		<div class="col-sm-4">
+ 		 <div class="col-sm-4">
   			<h3>Why do plants need light?</h3>
         <img class="img-responsive" src="https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2016/05/plant-164500_960_720.jpg">
   		</div>
- 		<div class="col-sm-4">
+ 		  <div class="col-sm-4">
   			<h3>Why do children look a bit like each of their parents but not exactly the same as either of them?</h3>
         <img class="img-responsive" src="http://www.morrowjfs.com/Image10.jpg">
   		</div>
-		<div class="col-sm-4">
+		  <div class="col-sm-4">
   			<h3>How do fish breathe?</h3>
         <img class="img-responsive" src="https://i.ytimg.com/vi/Tqkq4zUJ3Yw/maxresdefault.jpg">
   		</div>
   	</div>
   	<div class="row">
- 		<div class="col-sm-4">
+ 		  <div class="col-sm-4">
   			<h3>Why do we get hiccups?</h3>
         <img class="img-responsive" src="http://www.newhealthguide.org/images/10404488/What-Are-Hiccups.jpg">
-  		</div>
- 		<div class="col-sm-4">
+  	  </div>
+ 		 <div class="col-sm-4">
   			<h3>Why do trees lose their leaves in the autumn?</h3>
         <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/c8/93/c6/c893c62a0c95434f00ea0b5e701a17f9.jpg">
- 		</div>
- 		<div class="col-sm-4">
+ 		 </div>
+ 		 <div class="col-sm-4">
   			<h3>Why are bees really important?</h3>
         <img class="img-responsive" src="http://wonderopolis.org/wp-content/uploads//2013/06/dreamstime_xxl_2250640.jpg">
   		</div>
   	</div>
-    <html>
-<head>
 <script>
 function getVote(int) {
   if (window.XMLHttpRequest) {
@@ -105,21 +157,12 @@ function getVote(int) {
   xmlhttp.send();
 }
 </script>
-</head>
-<body>
-
-<div id="poll">
-<h3>Which question would you like to see answered next?</h3>
-<form>
-<input type="radio" name="vote" value="0" onclick="getVote(this.value)"> Why do some animals go to sleep during the winter?
-<br><input type="radio" name="vote" value="1" onclick="getVote(this.value)"> What is the smallest animal in the world?
-<br><input type="radio" name="vote" value="2" onclick="getVote(this.value)"> Why did dinosaurs go extinct?
-<br><input type="radio" name="vote" value="3" onclick="getVote(this.value)"> Why do plants need light?
-</form>
-</div>
-
-</body>
-</html>
+  <div id="poll">
+    <h3>Which question would you like to see answered next?</h3>
+    <form>
+    <input type="radio" name="vote" value="1" onclick="getVote(this.value)"> What is the smallest animal in the world?
+    <br><input type="radio" name="vote" value="2" onclick="getVote(this.value)"> Why did dinosaurs go extinct?
+    </form>
   </div>
 </div>
 </body>
