@@ -5,167 +5,53 @@
 	<link rel="stylesheet", type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
 	<title>BioBites</title>
-<style>
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-ul.topnav li {
-    float: left;
-}
-
-ul.topnav li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover, .dropdown:hover .dropbtn {
-    background-color: #42c142;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px;
-    height: 10px;
-   	right: 10px
-    top: 2px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    vertical-align: text-top;
-}
-
-input[type=text]:focus {
-    width: 50%;
-}
-</style>
 </head>
+
+
 <body>
-  <span><ul class="topnav">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropbtn">Topics</a>
-      <div class="dropdown-content">
-        <a href="#">Animals</a>
-        <a href="#">Humans</a>
-        <a href="#">Plants</a>
-      </div>
-      </li>
-      </ul>
-      </span>
-    <form>
-     <input type="text" name="search" placeholder="Search..">
-    </form>
-  </ul>
-  <div class="container">
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+    <div class="container-fluid">
   	<h1>BioBites</h1>
- 	  <h2><em><small><center>Fun facts about living things</center></em></small></h2>
-  	<div class="row">
- 		  <div class="col-sm-4">
-  			<h3>Why do some animals go to sleep during the winter?</h3>
-  		</div>
-		  <div class="col-sm-4">
-  			<h3>What is the biggest animal in the world?</h3>
-  		</div>
- 		  <div class="col-sm-4">
-  			<h3>What are bacteria, and are they bad for you?</h3>
-  		</div>
-  	</div>
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="img-responsive" src="hibernate.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="whale.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="bacteria.jpg">
-      </div>
+ 	  <h2><center>Fun facts about living things</center></h2>
     </div>
   	<div class="row">
- 		 <div class="col-sm-4">
-  			<h3>Why do plants need light?</h3>
+      <div class="col-sm-4" id="sleep">
+  		<h3><a href="#">Why do some animals go to sleep during the winter?</a></h3>
   		</div>
- 		  <div class="col-sm-4">
-  			<h3>Why aren't children identical to one of their parents?</h3>
+		  <div class="col-sm-4" id="whale">
+  			<h3><a href="#">What is the biggest animal in the world?</a></h3>
   		</div>
-		  <div class="col-sm-4">
-  			<h3>How do fish breathe?</h3>
+ 		  <div class="col-sm-4" id="bacteria">
+  			<h3><a href="#">What are bacteria, and are they bad for you?</a></h3>
   		</div>
   	</div>
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="img-responsive" src="plant.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="family.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="fish.jpg">
-      </div>
-    </div>
   	<div class="row">
- 		  <div class="col-sm-4">
-  			<h3>Why do we get hiccups?</h3>
+ 		 <div class="col-sm-4" id="plants">
+  			<h3><a href="#">Why do plants need light?</a></h3>
+  		</div>
+ 		  <div class="col-sm-4" id="family">
+  			<h3><a href="#">Why aren't children identical to one of their parents?</a></h3>
+  		</div>
+		  <div class="col-sm-4" id="fish">
+  			<h3><a href="#">How do fish breathe?</a></h3>
+  		</div>
+  	</div>
+  	<div class="row">
+     <div class="col-sm-4" id="autumn">
+        <h3><a href="#">Why do trees lose their leaves in the autumn?</a></h3>
+     </div>
+ 		  <div class="col-sm-4" id="hiccups">
+  			<h3><a href="#">Why do we get hiccups?</a></h3>
   	  </div>
- 		 <div class="col-sm-4">
-  			<h3>Why do trees lose their leaves in the autumn?</h3>
- 		 </div>
- 		 <div class="col-sm-4">
-  			<h3>Why are bees really important?</h3>
+ 		 <div class="col-sm-4" id="bees">
+  			<h3><a href="#">Why are bees important?</a></h3>
   		</div>
   	</div>
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="img-responsive" src="hiccups.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="autumn.jpg">
-      </div>
-      <div class="col-sm-4">
-        <img class="img-responsive" src="bee.jpg">
-      </div>
-    </div>
 <script>
 function getVote(int) {
   if (window.XMLHttpRequest) {
@@ -184,13 +70,12 @@ function getVote(int) {
 }
 </script>
   <div id="poll">
-    <h3>Which question would you like to see answered next?</h3>
+    <h2>Which question would you like to see answered next?</h2>
     <form>
     <input type="radio" name="vote" value="1" onclick="getVote(this.value)"> What is the smallest animal in the world?
     <br><input type="radio" name="vote" value="2" onclick="getVote(this.value)"> Why did dinosaurs go extinct?
     </form>
   </div>
-  </br>
 </div>
 </body>
 </html>

@@ -8,29 +8,88 @@ h1 {
 body {
     background-color: #cce5cc;
 } 
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+li {
+    float: left;
 }
 
-.dropdown:hover .dropdown-content {
+li a {
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-img {
-	height: 400px;
-	width: 300px;
-	border-radius: 50%
+
+li a:hover {
+    background-color: #111;
 }
+
 h3 {
+    background: black;
+    color: rgba(255,255,255,1);
     text-align:center;
+}
+
+div #sleep {
+    background-image: url("hibernate.jpg");
+    background-position: center;
+    min-height:395px;
+    max-width:640px;
+}
+div #whale {
+    background-image:url("whale.jpg");
+    background-position: center;
+    min-height:395px;
+    max-width:640px;
+}
+div #bacteria {
+    background-image: url("bacteria.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
+}
+div #plants {
+    background-image:url("plant.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;    
+}
+div #family {
+    background-image:url("family.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
+}
+div #fish {
+    background-image:url("fish.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
+}
+div #hiccups {
+    background-image:url("hiccups.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
+}
+div #autumn {
+    background-image:url("autumn.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
+}
+div #bees {
+    background-image:url("bee.jpg");
+    background-position:center;
+    min-height:395px;
+    max-width:640px;
 }
